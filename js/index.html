@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSA - Js Implementation</title>
+</head>
+<body>
+    <p><font size="6">Output Form</font></p>
+    <hr>
+    <p><font color="#FF0000">1.&nbsp;&nbsp;&nbsp; N = p * q
+    </font></p>
+    <p><font color="#FF0000">2.&nbsp;&nbsp;&nbsp; 
+    phi = ( p - 1 ) * ( q - 1
+    )&nbsp;&nbsp;&nbsp;&nbsp;</font></p>
+    <p><font color="#FF0000">3.&nbsp;&nbsp;&nbsp; GCD 
+    ( phi , e ) = 1</font></p>
+    <p><font color="#FF0000">4.&nbsp;&nbsp;&nbsp; 
+    Encrypted Text ( c ) = M<sup>e</sup>
+    * ( mod N )</font></p>
+    <p><font color="#FF0000">5.&nbsp;&nbsp;&nbsp; 
+    e * d =&nbsp; 1 * ( mod phi )</font></p>
+    <p><font color="#FF0000">6.&nbsp;&nbsp;&nbsp; 
+    Decrypted Text = c<sup>d</sup> * (
+    mod N )</font></p>
+    <form name="Output">
+        <table border="0" width="100%">
+          <tr>
+            <td width="22%"><font color="#0000FF">N
+              </font></td>
+            <td width="78%"><input type="text" name="N" 
+               size="20"></td>
+          </tr>
+          <tr>
+            <td width="22%"><font color="#0000FF">Phi</font></td>
+            <td width="78%"><input type="text" 
+               name="phi" size="20"></td>
+          </tr>
+          <tr>
+            <td width="22%"><font color="#0000FF">e
+                </font></td>
+            <td width="78%">
+           <input type="text" name="e" size="20"></td>
+          </tr>
+          <tr>
+            <td width="22%"><font color="#0000FF">Encrypted Text
+             </font></td>
+            <td width="78%">
+            <input type="text" name="c" size="20"></td>
+          </tr>
+          <tr>
+            <td width="22%"><font color="#0000FF">d
+                </font></td>
+            <td width="78%"><input type="text" name="d" size="20">
+                </td>
+          </tr>
+          <tr>
+            <td width="22%"><font color="#0000FF">
+                Decrypted Text</font></td>
+            <td width="78%"><input type="text" name="M" size="20"></td>
+          </tr>
+          <tr>
+            <td width="22%">
+              <input type="button" value="Close" name="Close" 
+            onClick="window.close()"></td>
+            <td width="78%">&nbsp;</td>
+          </tr>
+        </table>
+    </form>
+        <p>&nbsp;</p>
+    <script src="./script.js"></script>
+</body>
+</html>
